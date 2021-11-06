@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body{
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            padding: 0;
+            margin: 0;
+        }
+        .container {
+            flex: 1;
+            display: flex;
+justify-content: center;
+align-items: center;
+
+background: 
+radial-gradient(at 50% 0, black, transparent 70%),
+linear-gradient(0deg, black, gransparent 50%) bottom;
+background-size: 100% 15px;
+background-repeat: no-repeat;
+
+        }
+        .underline {
+            width: 6em;
+            text-align: center;
+            font-size: 30px;
+        }
+        .underline:after {
+content: ´\00a0´;
+background-image:
+radial-gradient(at 50% 0, blue 0% red 50%, transparet 75%) ;
+background-size: 100% 2px;
+background-repeat: no-repeat;
+float: left;
+width: 100%; 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="underline">HELLO,WORLD</div>
+    </div>
+</body>
+</html>
